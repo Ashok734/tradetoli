@@ -28,7 +28,7 @@
     <nav id="navbar_top" class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <h2>Logo</h2>
+          <img src="images/Tradetoli--png.png" alt="logo" style="width:200px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +72,7 @@
                 Blog
               </a>
             </li>
-            <li class="nav-item"><a class="nav-link n" href="">
+            <li class="nav-item"><a class="nav-link n" href="sign-in.html">
                 <div class="icons">
                   <svg class="icons-root" focusable="false" viewBox="0 0 24 24" color="rgba(0, 0, 0, 0.45)"
                     aria-hidden="true" style="font-size: 24px; vertical-align: middle;">
@@ -84,7 +84,7 @@
                 Log in
               </a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="">
+            <li class="nav-item"><a class="nav-link" href="sign-up.html">
                 <button type="button" class="btn btn-dark">Sign up</button>
               </a></li>
           </ul>
@@ -101,12 +101,14 @@
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
             <label for="floatingInput">Email address or phone</label>
           </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+          <div class="form-floating mb-3" style="position:relative;">
+            <input type="password" class="form-control" id="password-field" placeholder="Password" value="" required>
+            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
             <label for="floatingPassword">Password</label>
           </div>
-          <a href="#"> <span>Forgot password <svg class="forget-root" focusable="false" viewBox="0 0 24 24"
-                color="inherit" aria-hidden="true" style="font-size: 24px; vertical-align: middle;">
+          <a href="#">
+            <span>Forgot password <svg class="forget-root" focusable="false" viewBox="0 0 24 24" color="inherit"
+                aria-hidden="true" style="font-size: 24px; vertical-align: middle;">
                 <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
               </svg>
             </span>
@@ -118,6 +120,7 @@
             <button type="button" class="btn btn-light">No account? Create one</button>
           </div>
         </form>
+
       </div>
     </div>
   </section>
@@ -128,7 +131,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="f-cover">
-            <h1>Logo</h1>
+            <img src="images/Tradetoli--png.png" alt="logo" style="width:150px;">
             <li>Social Media</li>
             <div class="social">
               <span><i class="fab fa-facebook-f"></i></span>
@@ -173,13 +176,12 @@
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+
+
+
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
   <script src="js/internal.min.js"></script>
 
 </body>
